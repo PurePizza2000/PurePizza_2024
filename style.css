@@ -147,7 +147,7 @@ dialog {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 50%;
+    max-width: 99%;
     background-color: black;
   }
 #close-modal{
@@ -174,5 +174,12 @@ dialog img{
     }
     .bebidas img{
         margin: 0 auto;
+    }
+    #modal{
+        width: 86%;
+    }
+    dialog img{
+        max-width: 280px;
+    
     }
 }
