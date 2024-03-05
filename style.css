@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    color: orangered;
+    font-family: "Sniglet", system-ui;
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 30%;
+    margin-bottom: 10px;
+}
+.tipoPizza{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 0px;
+    align-items: center;
+    
+}
+.pizzaImg{
+    width: 60px;
+    float: left;
+    margin-right: 20px;
+}
+button{
+    width: 40%;
+    background-color: black;
+    padding: 1.2rem;
+    color:#F57802;
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-size: 2rem;
+    border: 2px solid ;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #F57802;
+    color: black;
+    transition: ease-in-out;
+
+}
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: 1.6rem;
+    margin-top: 15px;
+    text-align: center;
+}
+li{
+    margin-top: 30px;;
+}
+li+li{
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+footer{
+    margin: 12px auto;
+    
+    font-size: 2.8rem;
+}
+footer a{
+    list-style: none;
+    color: #F57802;
+}
+footer a + a{
+    margin-left: 60px;
+}
+section ul{
+    display: none;
+    list-style-type: none;
+}
+.creditos{
+    font-size: 0.5rem;
+    color: rgb(48, 43, 53);
+
+}
+.creditos a{
+    text-decoration: none;
+    color: rgb(48, 43, 53);
+}
+
+
+@media screen and (max-width: 760px) {
+    .logo{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    ul{max-width: 65%;}
+    
+    button{
+        width: 80%;
+        font-size: 1.2rem;
+    }
+}
