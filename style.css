@@ -52,12 +52,13 @@ button:hover{
     background-color: #F57802;
     color: black;
     transition: ease-in-out;
+    
 
 }
 h4{
     font-family: 'Times New Roman', Times, serif;
     color: aliceblue;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     margin-top: 15px;
     text-align: center;
 }
@@ -71,18 +72,43 @@ li+li{
 p{
     font-size: 0.8rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #FB7600;
+}
+span{
+    color:whitesmoke;
+    float: right;
+    margin-left: 15px;;
+}
+.bebidas{
+
+    
+}
+.bebidas img{
+    float: left;
+
+    margin: 0 auto;
 }
 footer{
-    margin: 12px auto;
-    
+    display: flex;
+    flex-direction: column;
     font-size: 2.8rem;
+    margin:10px auto;
+    padding: 25px;
+    width: 35%;
+    text-align: center;
+    padding:15px 0;
 }
 footer a{
+    margin:0 auto;
     list-style: none;
     color: #F57802;
+    width: 100%;
 }
-footer a + a{
-    margin-left: 60px;
+.footer{
+    display: inline-block;
+    margin-bottom: 15px;
 }
 section ul{
     display: none;
@@ -91,23 +117,62 @@ section ul{
 .creditos{
     font-size: 0.5rem;
     color: rgb(48, 43, 53);
-
 }
 .creditos a{
     text-decoration: none;
     color: rgb(48, 43, 53);
 }
+.oferta{
+    width: 120px;
 
+    cursor: pointer;
+}
 
+.icone{
+    padding: 15px;
+    width: 35px;
+}
+#open-modal{
+    border: none;
+    margin-left: -30px;
+}
+#open-modal:hover{
+    background-color: black;
+}
+#modal{
+    width: 50%;
+    margin: 25px auto;
+}
+dialog {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 50%;
+    background-color: black;
+  }
+#close-modal{
+    padding: 15PX;
+    max-width: 60px;
+    float: right;
+    margin-right: 10px;
+  }
+dialog img{
+    max-width: 390px;
+
+}
 @media screen and (max-width: 760px) {
     .logo{
-        width: 50%;
+        width: 60%;
         margin-bottom: 30px;
     }
     ul{max-width: 65%;}
+    h4{font-size: 1.2rem;}
     
     button{
-        width: 80%;
+        width: 84%;
         font-size: 1.2rem;
+    }
+    .bebidas img{
+        margin: 0 auto;
     }
 }
